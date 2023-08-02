@@ -1,0 +1,24 @@
+
+.highlighted{
+    font-weight: bold;
+
+}
+
+.pulsing{
+    animation: pulsing 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes pulsing {
+    0%{
+      filter: brightness(100%);
+      transform: scale(1);
+    }
+    50%{
+      filter: brightness(120%);
+      transform: scale(1.02);
+    }
+    100%{
+      filter: brightness(100%);
+      transform: scale(1);
+    }
+  }
